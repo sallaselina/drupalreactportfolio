@@ -22,8 +22,6 @@ button {
   color: #d911cb;
 }
 .navbar-toggler-icon {
-  background-color: #bf06a0;
-  border: 3px solid #d911cb;
   font-size: 3rem;
 }
 
@@ -63,6 +61,10 @@ p {
 }
 
 .contact-page {
+  background-image: url("./assets/rm251-aum-14-g.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   min-width: 100vw;
   min-height: 100vh;
