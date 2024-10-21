@@ -5,7 +5,7 @@ const About = () => {
   const [content, setContent] = useState(null);
 
   useEffect(() => {
-    fetchContent("node/about_me")
+    fetchContent("jsonapi/node/about_me")
       .then((data) => {
         setContent(data.data[0]);
       })
@@ -15,18 +15,23 @@ const About = () => {
   }, []);
 
   return (
-    <div>
-      <h1>About</h1>
-      {content && content.attributes && content.attributes.body ? (
-        <div>
-          <h3 dangerouslySetInnerHTML={{ __html: content.attributes.title }} />
-          <p
-            dangerouslySetInnerHTML={{ __html: content.attributes.body.value }}
-          />
+    <div className="about-page d-flex">
+      <div className="d-flex w-100 justify-content-center">
+        <div className="d-flex justify-content-center align-items-center">
+          {content && content.attributes && content.attributes.body ? (
+            <div className="m-2 p-5 bg-own w-75 rounded">
+              <h1>About me</h1>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: content.attributes.body.value,
+                }}
+              />
+            </div>
+          ) : (
+            <h4> About page will be here soon! </h4>
+          )}
         </div>
-      ) : (
-        <h4> About page will be here soon! </h4>
-      )}
+      </div>
     </div>
   );
 };

@@ -1,9 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -11,20 +7,112 @@
 }
 
 body {
+  font-family: "Nunito", sans-serif;
   margin: 0;
-  background-color: #8aa6a3;
+  background-color: #1c1c26;
+  color: #f2f2f2;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
 }
 
+.bg-blue {
+  background-color: #04bfbf;
+}
+
+.bg-own {
+  background-color: #f28599;
+}
+
+nav,
+.navbar {
+  background-color: #f26b83;
+  color: #f2f2f2;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-nav a {
+  color: #f2f2f2;
+}
+
 h1 {
   font-size: 3.2em;
-  padding: 1rem;
   line-height: 1.1;
+  text-align: center;
+}
+h2,
+h3 {
+  text-align: center;
 }
 p {
-  padding: 1rem;
+  text-align: center;
+}
+
+.home-text p {
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+.home-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/1957.516-Fragment.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-width: 500px;
+  min-height: 100%;
+}
+
+.project-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/david-pupaza-heNwUmEtZzo-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  position: relative;
+  min-width: 100vw;
+}
+
+.contact-page {
+  background-color: #f2f2f2;
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.home-text {
+  background-color: white;
+  color: black;
+}
+
+.home-text p {
+  font-size: 1.3rem;
+}
+
+.about-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/leonard-cotte-R5scocnOOdM-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: none;
+  min-height: 100%;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.about-page p {
+  font-size: 1.5rem;
+}
+
+.error-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/david-pupaza-heNwUmEtZzo-unsplash.jpg");
 }
 
 button {

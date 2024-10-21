@@ -1,30 +1,43 @@
 import { useEffect, useState } from "react";
 import { fetchContent } from "../services/api";
+import { Col } from "react-bootstrap";
+// import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const [projectList, setProjectList] = useState([]);
   useEffect(() => {
-    fetchContent("node/projects")
+    fetchContent("jsonapi/node/projects")
       .then((data) => {
-        setProjectList(data.data[0]);
+        setProjectList(data.data);
       })
       .catch((error) => {
         console.error("error message", error);
       });
   }, []);
   return (
-    <div>
+    <div className="project-page">
       <h1>Projects</h1>
-      {projectList && projectList.attributes && projectList.attributes.body ? (
-        <div
-          dangerouslySetInnerHTML={{
-            __html: projectList.attributes.body.value,
-          }}
-        />
-      ) : (
-        <div>No projects yet! </div>
-      )}
-      {/* <h2>{projectList.attributes.body.value}</h2> */}
+      <div className="m-5 p-5 d-flex justify-content-center align-items-center">
+        {projectList.map((project) => (
+          <div key={project.id} className="m-2 p-2 bg-own w-50 rounded">
+            <Col>
+              <h2>{project.attributes.title}</h2>
+            </Col>
+            <Col>
+              <p>{project.attributes.body.value}</p>
+            </Col>
+            <Col>
+              {/*      <a
+                href={`${project.attributes?.field_link_to_github_or_deployed.uri}`}
+                target="_blank"
+              >
+                See code here
+              </a> */}
+              {/* <ProjectCard project={project} /> */}
+            </Col>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
