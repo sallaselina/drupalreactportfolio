@@ -1,39 +1,41 @@
-:root {
-  color-scheme: light dark;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
-  background-color: #1c1c26;
-  color: #f2f2f2;
   display: flex;
+  color: #ffffff;
+  background-image: url("./assets/rm251-aum-14-g.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   min-width: 320px;
   min-height: 100vh;
 }
 
-.bg-blue {
-  background-color: #04bfbf;
-}
-
-.bg-own {
-  background-color: #f28599;
-}
-
 nav,
 .navbar {
-  background-color: #f26b83;
-  color: #f2f2f2;
+  border-bottom: 5px solid #f26b83;
   position: sticky;
   top: 0;
 }
 
+button {
+  color: #d911cb;
+}
+.navbar-toggler-icon {
+  background-color: #bf06a0;
+  border: 3px solid #d911cb;
+  font-size: 3rem;
+}
+
 .navbar-nav a {
-  color: #f2f2f2;
+  color: #f23869;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+.navbar-nav a:hover {
+  color: #0b9ed9;
 }
 
 h1 {
@@ -49,61 +51,36 @@ p {
   text-align: center;
 }
 
-.home-text p {
-  text-align: right;
-  font-size: 1.3rem;
-}
-
 .home-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/1957.516-Fragment.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  font-family: "Abril Fatface", serif;
+
   min-width: 500px;
-  min-height: 100%;
+  min-height: 80%;
 }
 
 .project-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/david-pupaza-heNwUmEtZzo-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
+  min-height: 70%;
   position: relative;
   min-width: 100vw;
 }
 
 .contact-page {
-  background-color: #f2f2f2;
   position: relative;
   min-width: 100vw;
   min-height: 100vh;
 }
 
 .home-text {
-  background-color: white;
-  color: black;
-}
-
-.home-text p {
-  font-size: 1.3rem;
+  color: #ffa4b6;
+  font-size: 1.4rem;
 }
 
 .about-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/leonard-cotte-R5scocnOOdM-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-width: none;
-  min-height: 100%;
-}
-
-a:active {
-  text-decoration: underline;
+  min-height: 80%;
 }
 
 .about-page p {
@@ -115,14 +92,20 @@ a:active {
     url("./assets/david-pupaza-heNwUmEtZzo-unsplash.jpg");
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.btn {
+  background-color: #d911cb;
+}
+.footer {
+  background-color: #730255;
+  color: #ffffff;
+}
+
+.projectCard {
+  background-color: #730255;
+  width: 40%;
+  height: 200px;
+}
+
+input {
+  width: 400px;
 }

@@ -6,3 +6,4 @@
 /web/profiles/contrib/
 /libraries/
 */node_modules/
+*.sql.gz

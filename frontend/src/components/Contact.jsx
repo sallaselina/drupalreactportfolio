@@ -48,7 +48,7 @@ const Contact = () => {
                     className="m-2 p-2 rounded"
                   ></textarea>
                   <br></br>
-                  <Button type="submit" className=" m-2 p-2 bg-blue">
+                  <Button type="submit" className="m-2 p-2 btn">
                     Submit form
                   </Button>
                 </Col>

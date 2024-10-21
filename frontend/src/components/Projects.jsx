@@ -16,10 +16,10 @@ const Projects = () => {
   }, []);
   return (
     <div className="project-page">
-      <h1>Projects</h1>
+      <h1 className="m-2">Projects</h1>
       <div className="m-5 p-5 d-flex justify-content-center align-items-center">
         {projectList.map((project) => (
-          <div key={project.id} className="m-2 p-2 bg-own w-50 rounded">
+          <div key={project.id} className="m-2 p-2 projectCard w-50 rounded">
             <Col>
               <h2>{project.attributes.title}</h2>
             </Col>
