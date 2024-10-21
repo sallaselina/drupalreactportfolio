@@ -12,9 +12,8 @@ body {
   min-height: 100vh;
 }
 
-nav,
 .navbar {
-  border-bottom: 5px solid #f26b83;
+  background-color: #e4cbff;
   position: sticky;
   top: 0;
 }
@@ -29,13 +28,12 @@ button {
 }
 
 .navbar-nav a {
-  color: #f23869;
   margin: 0.5rem;
   padding: 0.5rem;
   opacity: 0.8;
 }
 .navbar-nav a:hover {
-  color: #0b9ed9;
+  color: #a61f77;
 }
 
 h1 {
@@ -106,6 +104,7 @@ p {
   height: 200px;
 }
 
-input {
+input,
+textarea {
   width: 400px;
 }

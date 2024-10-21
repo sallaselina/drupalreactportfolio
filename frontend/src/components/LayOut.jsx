@@ -10,7 +10,7 @@ import { Image } from "react-bootstrap";
 const LayOut = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg">
         <Image src={logo} href="/" className="p-2" />
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
